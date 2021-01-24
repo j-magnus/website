@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnus | About</title>
+    <link rel="stylesheet" href="https://use.typekit.net/srh3bsf.css">
+    <style>
+        body {
+            background-color:#FFE200;
+            font-family: canada-type-gibson, sans-serif;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        /*nav bar*/
+        .nav {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            padding: 10px;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .nav td{
+            width: 25%;
+            font-size: smaller;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 50%; /* IE10 */
+            flex: 50%;
+            max-width: 50%;
+            padding: 0;
+        }
+
+        .column img {
+            vertical-align: middle;
+            width: 100%;
+            min-height: 100vh;
+            object-fit: cover;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 640px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .left {
+            padding: 0 70px;
+            line-height: 100vh;
+            height: 100vh;
+            text-align: left;
+        }
+
+        .left p {
+            line-height: 1.25;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .right {
+            padding: 0;
+            margin:0;
+        }
+
+        .footy {
+            text-align: center;
+            position: absolute;
+            float: bottom;
+            bottom: 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .footy td{
+            width: 25%;
+            font-size: smaller;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    <table class="nav">
+        <tr><td></td><td><a href="index.html#bookmark">Work &#8599;</a></td><td><a href="about.html">About &#8595;</a></td><td></td></tr>
+    </table>
+</div>
+<div class="wrapper">
+    <div class="row">
+    <div class="column">
+        <div class="left"><p>Hey- I'm Jack Magnus!<br><br>I work creatively in:<br>art, design, strategy, writing, and illustration.<br><br>I'm currently studying Graphic Design [B.F.A.] and Marketing [B.S.B.] at the University of Minnesota-Twin Cities. I use narrative to improve margined systems, challenge perspectives, and encourage empathy.<br><br>Thanks for coming to my site! I made it myself :)<br><br><a href="index.html">Back to Work&#8599;</a><br><a href="images/magnus_resume.pdf" target="_blank">Resume&#8599;</a>
+        </p>
+        </div>
+    </div>
+    <div class="column"><img src="images/headshot.jpg" class="right"></div>
+    </div>
+    <div><table class="footy"><tr><td></td><td></td><td></td><td>Self Portrait | 2020</td></tr></table></div>
+</div>
+</body>
+</html>
