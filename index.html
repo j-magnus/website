@@ -3,45 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Jack Magnus</title>
-    <link rel="stylesheet" href="https://use.typekit.net/srh3bsf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gva4kcm.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNCN5802QP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNCN5802QP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-WNCN5802QP');
-</script>
+        gtag('config', 'G-WNCN5802QP');
+    </script>
     <style>
         body {
-            font-family: canada-type-gibson, sans-serif;
+            font-family: runda, sans-serif;
             font-weight: 300;
             font-size: large;
+            line-height: 1.5;
             margin: 0;
         }
 
         .wrapper {
             box-sizing: border-box;
+            margin: 0;
         }
 
         html {
             scroll-behavior: smooth;
-        }
-        
-
-        /*nav bar*/
-        .nav {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-        }
-
-        .navbutton{
-            font-size: large;
-            text-align: left;
-            padding-left: 70px;
         }
 
         a {
@@ -49,29 +37,110 @@
             color: black;
         }
 
+
+        .left {
+            padding: 70px 0 0 70px;
+            text-align: left;
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        video {
+            display: block;
+        }
+
+        .picbox {
+            padding-left: 70px;
+            padding-top: 70px;
+        }
+
+        .biopic {
+            width: 100%;
+            height: 375px;
+            object-fit: cover;
+        }
+
+        hr { margin: -1px auto; }
+
+        /*topnav*/
+
+        .navmaster {
+            display: block;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 45px;
+            z-index: 1;
+            border-bottom: 1px solid black;
+        }
+
+        .topnav {
+            padding-top: 10px;
+        }
+
+        .topnav img {
+            width: 20px;
+            padding-top: 5px;
+            padding-left: 70px;
+        }
+
+        .navpages {
+            width: 100%;
+            padding-left: 66px;
+        }
+
+        .navpages td {
+            width: 25%;
+        }
+
+        .navpages a{
+            transition: padding-left 0.1s
+        }
+        .navpages a:hover{
+            font-style: italic;
+            padding-left: 2px;
+        }
+
+        .bumper {
+            width: 10px;
+            height: 45px;
+            display: block;
+        }
+
+        .imgbump {
+            width: 10px;
+            height: 45px;
+            display: block;
+        }
+
         /*footer*/
         .footer {
             font-size: large;
             padding-left: 70px;
-        }
-
-        .footer td{
-            width: 20%;
-            background-color: deeppink;
-            padding-left: 70px;
-            overflow: auto;
+            padding-top: 17px;
+            height: 45px;
+            z-index: 1;
         }
 
         .blockcontent {
             position: relative;
             background-color: white;
-            height:inherit;
+            height: inherit;
         }
 
         /*page in two sections*/
         .grid {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 3fr;
         }
 
         .container {
@@ -87,27 +156,19 @@
             }
         }
 
-        /*slideshow stuff*/
-        .row {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
-        }
-
         /* Create four equal columns that sits next to each other */
         .column {
             -ms-flex: 20%; /* IE10 */
             flex: 20%;
             max-width: 50%;
-            padding: 0 10px;
+            padding: 0;
 
         }
 
         .column img {
             vertical-align: middle;
             width: 100%;
-            margin: 10px 0;
+            margin: 0;
         }
 
         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -119,729 +180,105 @@
             }
         }
 
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: auto;
-            background-color: rgba(204, 204, 204, 0.95);
-        }
-
-        /* Modal Content */
-        .modal-content {
-            position: relative;
-            background-color: rgba(204, 204, 204, 0);
-            margin: auto;
-            padding: 0;
-            width: 60%;
-            max-width: 1300px;
-        }
-
-        /* The Close Button */
-        .close {
-            color: white;
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #808080;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .mySlides {
-            display: none;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-        /* Next & previous buttons */
-        .prev {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            left: -50px;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: 300;
-            font-size: 30px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            right: -50px;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: 300;
-            font-size: 30px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            color: rgb(128, 128, 128);
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #808080;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        .demo {
-            opacity: 0.6;
-        }
-
-        img.hover-shadow {
-            transition: 0.3s;
-        }
-
-        .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .project {
-            background-color: #ffffff;
-            padding-bottom: 40px;
-        }
-
-        .section {
-            padding: 0 60px;;
-        }
-
-        .brief {
-            width: auto;
-            text-align: left;
-            font-size: large;
-            padding-top: 40px;
-            padding-left: 70px;
-        }
-
-         @media screen and (max-width: 950px) {
-            .brief {
-                padding-right: 70px;
-            }
-        }
-        
-        .pdfclick {
-            font-size: smaller;
-            width:400px;
-            text-align: center;
-            padding: 10px;
-            display: block;
-            margin: auto;
-        }
-
-        .video {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
-        }
-        .video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .left {
-            padding: 40px 0 40px 70px;
-            text-align: left;
-            position: sticky;
-            left: 0;
-            top:0;
-        }
-        
         @media screen and (max-width: 950px) {
             .left {
                 padding-right: 70px;
+                padding-bottom: 70px;
             }
-        }
 
-        .picbox {
-            padding-left: 70px;
-        }
-
-        .biopic {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-
-        @media screen and (max-width: 950px) {
             .picbox {
                 padding: 0;
+                margin: 0;
             }
-        }
-        
-        @media screen and (max-width: 950px) {
-            .heading {
+
+            .navpages {
+                padding-top: 5px;
+                border-bottom: 1px solid black;
+            }
+
+            .bumper {
+                width: 10px;
+                height: 80px;
+                display: block;
+            }
+
+            .imgbump {
                 display: none;
             }
         }
-        
-         #myVideo:hover {
-           cursor: url(images/audio_hover.png), auto;
-       }
+
+        #mydesign:hover {
+            cursor: url(images/arrow-04.png), auto;
+        }
+
+        #mymotion:hover {
+            cursor: url(images/arrow-07.png), auto;
+        }
+
+        #myillustration:hover {
+            cursor: url("images/arrow-05.png"), auto;
+        }
+
+        #mywriting:hover {
+            cursor: url("images/arrow-06.png"), auto;
+        }
+
 
     </style>
 </head>
 <body>
 <div class="wrapper">
 
-    <div class="container grid">
-        <div class="item">
-            <div class="heading" style="padding-top: 40px;">
-                <div class="navbutton"><p><a href="#bookmark">Work &#8600;</a><br><br><a href="#me">About &#8595;</a></p></div>
-            </div>
-        </div>
-    <div class="item">
-    <div class="picbox">
-        <video id="myVideo" width="100%" autoplay loop muted onclick="toggleMute();">
-            <source src="images/magnus_introreel.mp4" type="video/mp4">
-            unsupported video
-        </video>
+    <div class="container grid navmaster" style="height: 45px; width: 100%;">
+        <div class="item topnav"><a href="index.html"><img src="images/home_button-07.png" alt="homebutton"></a></div>
+        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="ILLUSTRATION.html">ILLUSTRATION</a></td><td><a href="WRITING.html">WRITING</a></td></tr></table></div>
     </div>
-    </div>
-    </div>
-    
-  <!--
-    <div style="background-image: url('images/bgyellow.png'); background-size: cover; width: 100%; height: 100vh; position: fixed; z-index: -1;"></div>
-
-    <div style="width: 100%; height: 100vh;">
-        <span style="font-size: 10vw; font-weight: 600; position: absolute; top: 200px; left: 70px;">jack magnus</span>
-    </div>
-
-   
-    <div>
-        <div class="grid nav">
-            <div class="item navbutton"> <p><a href="#me">About &#8600;</a></p></div>
-            <div class="item navbutton"> <p><a href="#bookmark">Work &#8595;</a></p></div>
-        </div>
-    </div>
--->
 
     <div style="background-color: white">
-    <div class="blockcontent">
-    <div class="container grid">
-        <div class="item">
-            <div class="left"><p>Hey&mdash;I'm <span style="font-weight: bolder;">Jack Magnus!</span><br><br>I work creatively in:<br>design, strategy, research, writing, and illustration.<br><br>I'm currently studying Graphic Design [B.F.A.] and Marketing [B.S.B.] at the University of Minnesota-Twin Cities. I use narrative to improve margined systems, challenge perspectives, and encourage empathy.<br><br>Thanks for coming to my site! I made it myself :)<br><br><a href="images/magnus_resume.pdf" target="_blank">Resume&#8599;</a>
-            </p>
-            </div>
-        </div>
-
-        <div class="item" id="bookmark">
-    <!-- slideshow play -->
-
-    <div class="project">
-        <p class="brief"><span style="font-weight: bolder;">Meet Me at the Before and After</span><br>writing | design | illustration<br>Written and illustrated 10min play, designed for spiral bound book.<br> 2 Pantone color printed, digital availability.</p>
-        <div class="section">
-    <div class="row">
-        <div class="column">
-            <img src="images/play_coveredit.png" style="width:100%" onclick="openModal(1);currentSlide(1)" class="hover-shadow cursor" alt="photo">
-        </div>
-        <div class="column">
-            <img src="images/play_words.png" style="width:100%" onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-            <img src="images/play_image.png" style="width:100%" onclick="openModal(1);currentSlide(3)" class="hover-shadow cursor" alt="photo">
-        </div>
-    </div>
-        <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 10px;">
-        <img src="images/play_spread.png" style="width:100%;" onclick="openModal(1);currentSlide(4)" class="hover-shadow cursor" alt="photo">
-        </div>
-    </div>
-    </div>
-
-    <div id="myModal1" class="modal">
-        <span class="close cursor" onclick="closeModal(1)" style="font-weight: lighter">x</span>
-        <div class="modal-content">
-
-            <div class="mySlides1">
-                <div class="numbertext">1 / 4</div>
-                <a href="images/meetme.pdf" target="_blank"><img src="images/play_cover.png" style="width:50%; display: block; margin: auto;" alt="photo"></a>
-                <span class="pdfclick">Click for full play!</span>
-            </div>
-
-            <div class="mySlides1">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/play_words.png" style="width:100%" alt="photo">
-            </div>
-
-            <div class="mySlides1">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/play_image.png" style="width:100%" alt="photo">
-            </div>
-
-            <div class="mySlides1">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/play_spread.png" style="width:100%" alt="photo">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-        </div>
-    </div>
-    <!-- slideshow play -->
-
-    <!-- slideshow oreo -->
-
-    <div class="project">
-        <p class="brief"><span style="font-weight: bolder;">Oreo Brand Key Issues</span><br>brand | strategy | design<br>Research and analysis into the Oreo brand's consumer behavior.<br>Final deliverable included recommendations and insights, including ideated "Avocado Oreos".</p>
-        <div class="section">
-            <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 10px;">
-                <video width="100%" autoplay loop muted onclick="openModal(2);currentSlide(1)" class="hover-shadow cursor">
-                    <source src="images/oreo.mp4" type="video/mp4">
-                    unsupported video
-                </video>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal2" class="modal">
-        <span class="close cursor" onclick="closeModal(2)" style="font-weight: lighter">x</span>
-        <div class="modal-content">
-
-            <div class="mySlides2">
-                <div class="numbertext">1 / 4</div>
-                <img src="images/oreopackage.png" style="width:90%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides2">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/oreo_insta.png" style="width:40%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides2">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/oreo_insta2.png" style="width:40%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides2">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/oreo_twitter.jpg" style="width:45%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-        </div>
-    </div>
-    <!-- slideshow oreo -->
-
-    <!-- slideshow winter -->
-
-    <div class="project">
-        <p class="brief"><span style="font-weight: bolder;">You Dumb Bitch</span><br>writing | design | illustration<br>Written and illustrated Winter Chapbook, designed for small print and distribution.<br>A Winter Survival Guide in 5 easy steps.</p>
-        <div class="section">
-            <div class="row">
-                <div class="column">
-                    <img src="images/winter-01.png" style="width:100%" onclick="openModal(3);currentSlide(1)" class="hover-shadow cursor" alt="photo">
-                </div>
-                <div class="column">
-                    <img src="images/winter-02.png" style="width:100%" onclick="openModal(3);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal3" class="modal">
-        <span class="close cursor" onclick="closeModal(3)" style="font-weight: lighter">x</span>
-        <div class="modal-content">
-
-            <div class="mySlides3">
-                <div class="numbertext">1 / 8</div>
-                <img src="images/winter-01.png" style="width:50%; display: block; margin: auto;" alt="photo">
-                <div style="font-size: smaller; width: 400px; text-align: center; margin: auto; padding-top: 10px;">full book preview &#8594;</div>
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">2 / 8</div>
-                <img src="images/winter2.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">3 / 8</div>
-                <img src="images/winter3.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">4 / 8</div>
-                <img src="images/winter4.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">5 / 8</div>
-                <img src="images/winter5.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">6 / 8</div>
-                <img src="images/winter6.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">7/ 8</div>
-                <img src="images/winter7.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <div class="mySlides3">
-                <div class="numbertext">8 / 8</div>
-                <img src="images/winter8.png" style="width:100%; display: block; margin: auto;" alt="photo">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-        </div>
-    </div>
-    <!-- slideshow winter -->
-
-            <!-- silk -->
-
-                    <div class="project">
-                        <p class="brief"><span style="font-weight: bolder;">Silk PSA</span><br>video | animation |
-                            communication<br>Mock-up public service announcement for silk pillowcases.<br>Written for
-                            business communication, available on channel.</p>
-                        <div class="section" style="padding-left: 70px; padding-bottom: 5%;">
-                            <div class="video">
-                                <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 20px 5%;">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k2muuv0vpyA"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- silk -->
-            
-             <!-- mineral  -->
-
-                    <div class="project">
-                        <p class="brief"><span style="font-weight: bolder;">Mineral Wine</span><br>branding |
-                            design <br>Branded product featuring three different boxed wines. <br>Identity designed for holistic integrity and price sensitivity. </p>
-                        <div class="section">
-                            <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 10px;">
-                                <img src="images/mineral_front.jpg" style="width:100%;"
-                                     onclick="openModal(8);currentSlide(1)" class="hover-shadow cursor" alt="photo">
-                            </div>
-                            <div class="row">
-                                <div class="column">
-                                    <img src="images/mineral_top.jpg" style="width:100%;"
-                                         onclick="openModal(8);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-                                </div>
-                                <div class="column">
-                                    <img src="images/mineral_back.jpg" style="width:100%;"
-                                         onclick="openModal(8);currentSlide(3)" class="hover-shadow cursor" alt="photo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="myModal8" class="modal">
-                        <span class="close cursor" onclick="closeModal(8)" style="font-weight: lighter">x</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides8">
-                                <div class="numbertext">1 / 6</div>
-                                <img src="images/mineral_front.jpg" style="width:100%;" alt="photo">
-                            </div>
-
-                            <div class="mySlides8">
-                                <div class="numbertext">2 / 6</div>
-                                <img src="images/mineral_top.jpg" style="width:100%;" alt="photo">
-                            </div>
-
-                            <div class="mySlides8">
-                                <div class="numbertext">3 / 6</div>
-                                <img src="images/mineral_back.jpg" style="width:100%;" alt="photo">
-                            </div>
-
-                            <div class="mySlides8">
-                                <div class="numbertext">4 / 6</div>
-                                <img src="images/mineral_bag01.jpg" style="width:100%;" alt="photo">
-                            </div>
-
-                            <div class="mySlides8">
-                                <div class="numbertext">5 / 6</div>
-                                <img src="images/mineral_bag02.jpg" style="width:100%;" alt="photo">
-                            </div>
-
-                            <div class="mySlides8">
-                                <div class="numbertext">6 / 6</div>
-                                <img src="images/mineral_bag03.jpg" style="width:100%;" alt="photo">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-                            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-                        </div>
-                    </div>
-                    <!-- mineral -->
-            
-            <!-- magic -->
-
-            <div class="project">
-                <p class="brief"><span style="font-weight: bolder;">Community Mural</span><br>illustration | design<br>Mural design for Prospect Park community.<br>Daycare and Assisted Living shared wall (6'x40').</p>
-                <div class="section">
-                    <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 10px;">
-                        <video width="100%" autoplay loop muted onclick="openModal(7);currentSlide(1)" class="hover-shadow cursor">
-                            <source src="images/mural_move.mp4" type="video/mp4">
-                            unsupported video
-                        </video>
+        <div class="blockcontent">
+            <div class="container grid" id="bookmark">
+                <div class="item">
+                    <div class="bumper"></div>
+                    <div class="left"><p>Hey - I'm Jack Magnus!<br><br>I work creatively in <a href="DESIGN.html">design,</a> <a href="MOTION.html">motion,</a> <a href="ILLUSTRATION.html">illustration,</a> and <a href="WRITING.html">writing</a>.<br><br>My drive is to create work that exists beyond marginal, exhausted, and majority represented ideas.<br><br><a href="images/jackmagnus_resume.pdf" target="_blank">Resume&#8599;</a>
+                    </p>
                     </div>
                 </div>
-            </div>
 
-            <div id="myModal7" class="modal">
-                <span class="close cursor" onclick="closeModal(7)" style="font-weight: lighter">x</span>
-                <div class="modal-content" style="width: 90%;">
+                <div class="item">
+                    <div class="imgbump"></div>
+                    <div class="picbox" style="padding-top: 0;">
+                        <a id="mydesign" href="DESIGN.html"><img src="images/NGN_1.gif" class="biopic" alt="design"></a>
+                    </div>
 
-                    <div class="mySlides7">
-                        <img src="images/mural-04.png" style="width:100%;" alt="photo">
+                    <div class="picbox">
+                        <a id="mymotion" href="MOTION.html">
+                            <video width="100%" autoplay loop muted onclick="openModal(1);currentSlide(1)"
+                                   class="hover-shadow cursor biopic">
+                                <source src="images/banners-02.mp4" type="video/mp4">
+                                unsupported video
+                            </video>
+                        </a>
+                    </div>
+
+                    <div class="picbox">
+                        <a id="myillustration" href="ILLUSTRATION.html"><img src="images/banners-03.png" class="biopic" alt="illustration"></a>
+                    </div>
+
+                    <div class="picbox">
+                        <a id="mywriting" href="WRITING.html"> <img src="images/banners-04.png" class="biopic" alt="motion"></a>
                     </div>
 
                 </div>
             </div>
+            <hr>
 
-            <!-- magic -->
-
-    <!-- slideshow booklet -->
-
-    <div class="project">
-        <p class="brief"><span style="font-weight: bolder;">521 miles till empty</span><br>design | layout<br>Entirely composed of one image and one phrase.<br>Designed for printed booklet.</p>
-        <div class="section">
-            <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 10px;">
-                <video width="100%" autoplay loop muted onclick="openModal(4);currentSlide(1)" class="hover-shadow cursor">
-                <source src="images/booklet.mp4" type="video/mp4">
-                    unsupported video
-                </video>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img src="images/booklet2.png" style="width:100%;" onclick="openModal(4);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-                </div>
-                <div class="column">
-                    <img src="images/booklet6.png" style="width:100%;" onclick="openModal(4);currentSlide(3)" class="hover-shadow cursor" alt="photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal4" class="modal">
-        <span class="close cursor" onclick="closeModal(4)" style="font-weight: lighter">x</span>
-        <div class="modal-content">
-
-            <div class="mySlides4">
-                <div class="numbertext">1 / 3</div>
-                <a href="images/booklet.pdf" target="_blank"><img src="images/booklet.png" style="width:50%; display: block; margin: auto;" alt="photo"></a>
-                <span class="pdfclick">Click for full booklet!</span>
-            </div>
-
-            <div class="mySlides4">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/booklet2.png" style="width:100%;" alt="photo">
-            </div>
-
-            <div class="mySlides4">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/booklet6.png" style="width:100%;" alt="photo">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-        </div>
-    </div>
-    <!-- slideshow booklet -->
-
-
-            <!-- desu -->
-
-            <div class="project">
-                <p class="brief"><span style="font-weight: bolder;">Design U Poster</span><br>illustration | design<br>Poster design for Design U's Spring 2020 Portfolio Event</p>
-                <div class="section" style="padding-left: 70px;">
-                    <div>
-                        <img src="images/designu_illidisplay.JPG" width="100%" onclick="openModal(5);currentSlide(1)" class="hover-shadow cursor"/></div>
-                </div>
-            </div>
-
-            <div id="myModal5" class="modal">
-                <span class="close cursor" onclick="closeModal(5)" style="font-weight: lighter">x</span>
-                <div class="modal-content">
-
-                    <div class="mySlides5">
-                        <img src="images/designu_illi.JPG" style="width:50%; display: block; margin: auto;" alt="photo">
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- desu -->
-
-
-    <!-- slideshow art -->
-
-    <div class="project">
-        <p class="brief"><span style="font-weight: bolder;">Art Critique Layout</span><br>design | writing | layout<br>Spreads for art critique publication.<br>Designed and written for Contemporary Art and Theory.</p>
-        <div class="section">
-            <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 10px;">
-                <img src="images/artcrit_1.png" style="width:100%;" onclick="openModal(6);currentSlide(1)" class="hover-shadow cursor" alt="photo">
-            </div>
-            <div class="row">
-            <div class="column">
-                <img src="images/artcrit_2.png" style="width:100%;" onclick="openModal(6);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-            </div>
-            <div class="column">
-                <img src="images/artcrit_3.png" style="width:100%;" onclick="openModal(6);currentSlide(3)" class="hover-shadow cursor" alt="photo">
-            </div>
-           </div>
-        </div>
-    </div>
-
-    <div id="myModal6" class="modal">
-        <span class="close cursor" onclick="closeModal(6)" style="font-weight: lighter">x</span>
-        <div class="modal-content">
-
-            <div class="mySlides6">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/artcrit_1.png" style="width:100%;" alt="photo">
-            </div>
-
-            <div class="mySlides6">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/artcrit_2.png" style="width:100%;" alt="photo">
-            </div>
-
-            <div class="mySlides6">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/artcrit_3.png" style="width:100%;" alt="photo">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-        </div>
-    </div>
-    <!-- slideshow art -->
-
-    <!-- stopmotion -->
-
-    <div class="project">
-        <p class="brief"><span style="font-weight: bolder;">Where the Snowflakes Flow Up</span><br>animation | video | writing<br>Stop Motion Animation made in Spring 2019.<br>Selected from past projects, available on channel.</p>
-      <div class="section" style="padding-left: 70px; padding-bottom: 5%;">
-        <div class="video">
-            <div style=" -ms-flex: 20%; flex: 20%; max-width: 100%; padding: 20px 5%;">
-                <iframe width="560px" height="315px" src="https://www.youtube.com/embed/cXEyWQvlhAQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- stopmotion end -->
-
-            <div class="picbox">
-            <img id="me" src="images/headshot.jpg" class="biopic">
-            </div>
-        </div>
-
-    </div>
-    </div>
         <div class="grid">
-        <div class="item footer"> <p>Contact<br><a href="tel:414-943-3133">(414) 943-3133</a><br><a href="mailto:jackmags260@gmail.com?subject=Jack you're so cool!">jackmags260@gmail.com</a></p></div>
-        <div class="item footer"> <p> <a href="#bookmark">Top &#8593;</a></p></div>
+            <div class="item footer"><p><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">jackmags260@gmail.com</a></p></div>
+            <div class="item footer"><p><a href="#bookmark">Top &#8593;</a></p></div>
         </div>
 
+        </div>
     </div>
-    </div>
-
-    <script>
-        var curModal;
-        function openModal(modalNum) {
-            document.getElementById("myModal"+modalNum).style.display = "block";
-            curModal = modalNum;
-        }
-
-        function closeModal(modalNum) {
-            document.getElementById("myModal"+modalNum).style.display = "none";
-            curModal = modalNum;
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides"+curModal);
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-        
-        function toggleMute() {
-
-        var video=document.getElementById("myVideo")
-
-        if(video.muted){
-            video.muted = false;
-        } else {
-            video.muted = true;
-        }
-
-    }
-        
-    </script>
-
-
 </div>
 </body>
 </html>
