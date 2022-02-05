@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jack Magnus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/gva4kcm.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNCN5802QP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WNCN5802QP');
+    </script>
+    <style>
+        body {
+            font-family: runda, sans-serif;
+            font-weight: 300;
+            font-size: large;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .wrapper {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .picbox {
+            padding-left: 70px;
+            padding-top: 70px;
+        }
+
+        .bannerimage {
+            width: 100%;
+            height: 375px;
+            object-fit: cover;
+        }
+
+        img {
+            display: block;
+        }
+
+        .section {
+            padding-left: 70px;
+            padding-top: 70px;
+        }
+
+        .brief {
+            width: 50%;
+            text-align: left;
+            font-size: large;
+            padding-left: 70px;
+            padding-top: 70px;
+            margin: 0;
+        }
+
+        .video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            padding: 70px 0 0 70px;
+            text-align: left;
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+
+        .left p {
+            margin:0;
+        }
+
+        /*topnav*/
+
+        .navmaster {
+            display: block;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 45px;
+            z-index: 1;
+            border-bottom: 1px solid black;
+        }
+
+        .topnav {
+            padding-top: 10px;
+        }
+
+        .topnav img {
+            width: 20px;
+            padding-top: 5px;
+            padding-left: 70px;
+        }
+
+        .navpages {
+            width: 100%;
+            padding-left: 66px;
+        }
+
+        .navpages td {
+            width: 25%;
+        }
+
+        .navpages a{
+            transition: padding-left 0.1s
+        }
+        .navpages a:hover{
+            font-style: italic;
+            padding-left: 2px;
+        }
+
+        .bumper {
+            width: 10px;
+            height: 45px;
+            display: block;
+        }
+
+        .imgbump {
+            width: 10px;
+            height: 45px;
+            display: block;
+        }
+
+        /*footer*/
+        .footer {
+            font-size: large;
+            padding-left: 70px;
+            padding-top: 17px;
+            height: 45px;
+        }
+
+        .footer td {
+            width: 20%;
+            background-color: deeppink;
+            padding-left: 70px;
+            overflow: auto;
+        }
+
+        /*page in two sections*/
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        @media screen and (max-width: 950px) {
+            .container {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        /*slideshow stuff*/
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 20%; /* IE10 */
+            flex: 20%;
+            max-width: 50%;
+            padding: 0;
+
+        }
+
+        .column img {
+            vertical-align: middle;
+            width: 100%;
+            margin: 0;
+        }
+
+        .lgriddy {
+            padding-right: 35px;
+        }
+
+        .rgriddy {
+            padding-left: 35px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 70px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(204, 204, 204, 0.95);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: rgba(204, 204, 204, 0);
+            margin: auto;
+            padding: 0;
+            width: 60%;
+            max-width: 1300px;
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #808080;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            left: -50px;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            right: -50px;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            color: rgb(128, 128, 128);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #808080;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .pdfclick {
+            font-size: smaller;
+            width: 400px;
+            text-align: center;
+            padding: 10px;
+            display: block;
+            margin: auto;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+        @media screen and (max-width: 700px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+
+            .picbox {
+                padding: 0;
+            }
+
+            .section {
+                padding: 0;
+            }
+
+            .brief {
+                padding: 70px;
+            }
+
+            .rgriddy {
+                padding: 0;
+            }
+
+            .lgriddy {
+                padding-right: 0;
+            }
+
+
+        }
+
+        @media screen and (max-width: 950px) {
+            .left {
+                padding-right: 70px;
+                padding-bottom: 70px;
+            }
+
+            .picbox {
+                padding-left: 0;
+            }
+
+            .section {
+                padding-left: 0;
+            }
+
+            .brief {
+                padding-right: 70px;
+            }
+
+            .projtop {
+                padding: 0;
+            }
+
+            .navpages {
+                padding-top: 5px;
+                border-bottom: 1px solid black;
+            }
+
+            .bumper {
+                width: 10px;
+                height: 80px;
+                display: block;
+            }
+
+            .imgbump {
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="container grid navmaster" style="height: 45px; width: 100%;">
+        <div class="item topnav"><a href="index.html"><img src="images/home_button-07.png" alt="homebutton"></a></div>
+        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="ILLUSTRATION.html">ILLUSTRATION</a></td><td><span style="font-style: italic; padding-left: 2px;">WRITING</span></td></tr></table></div>
+    </div>
+
+    <div class="container grid">
+        <div class="item">
+            <div class="bumper"></div>
+            <div class="left"><p>MEET ME AT THE BEFORE AND AFTER<br><br>Written and illustrated 10min play, designed for spiral bound book.<br>
+                2 Pantone color printed, digital availability.<br></p>
+            </div>
+        </div>
+
+        <div class="item" id="bookmark">
+            <div class="imgbump"></div>
+            <div class="picbox" style="padding-top: 0;">
+                <img src="images/meetme.png" class="hover-shadow cursor" style="width:100%;"
+                     onclick="openModal(1);currentSlide(1)" alt="photo">
+            </div>
+
+        </div>
+
+        <div id="myModal1" class="modal">
+            <span class="close cursor" onclick="closeModal(1)" style="font-weight: lighter">x</span>
+            <div class="modal-content">
+
+                <div class="mySlides1">
+                    <a href="images/meetme.pdf"><img src="images/meetme_cover.png" style="width:47%; display: block; margin: auto;" alt="photo"></a>
+                    <p class="pdfclick">Click to read full play!</p>
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/meetme.png" style="width:90%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+            </div>
+        </div>
+    </div>
+    <hr style="margin-top: 0;">
+
+    <!-- PROJECT DIVIDER-->
+
+    <div class="container grid">
+        <div class="item">
+            <div class="left"><p>YOU DUMB BITCH<br><br>Written and illustrated winter chapbook, designed for small print and distribution.<br>
+                A Winter Survival Guide in 5 easy steps.<br>
+            </p>
+            </div>
+        </div>
+
+        <div class="item">
+
+            <div class="picbox projtop">
+                <img src="images/YDB.jpg" style="width:100%;"
+                     onclick="openModal(2);currentSlide(1)" class="hover-shadow cursor" alt="photo">
+            </div>
+
+            <div id="myModal2" class="modal">
+                <span class="close cursor" onclick="closeModal(2)" style="font-weight: lighter">x</span>
+                <div class="modal-content">
+
+                    <div class="mySlides2">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="images/YDB_1.png" style="width:50%; display: block; margin: auto;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="images/YDB_3.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="images/YDB_4.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="images/YDB_5.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="images/YDB_6.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="images/YDB_7.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">7/ 8</div>
+                        <img src="images/YDB_8.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="images/YDB_9.png" style="width:100%;" alt="photo">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                    <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin-top: 0;">
+
+    <!-- PROJECT DIVIDER-->
+
+    <div class="container grid">
+        <div class="item">
+            <div class="left"><p>521 MILES TILL EMPTY<br><br>Entirely composed of one image and one phrase.<br>
+                Designed for printed booklet.
+            </p>
+            </div>
+        </div>
+
+        <div class="item">
+
+            <div class="picbox">
+                <img src="images/521_6.jpg" style="width:100%;"
+                     onclick="openModal(3);currentSlide(1)" class="hover-shadow cursor" alt="photo">
+            </div>
+
+
+            <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal(3)" style="font-weight: lighter">x</span>
+                <div class="modal-content">
+
+                    <div class="mySlides3">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="images/521_1.jpg" style="width:50%; display: block; margin: auto;" alt="photo">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="images/521_2.jpg" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="images/521_3.jpg" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="images/521_4.jpg" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="images/521_5.jpg" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="images/521_6.jpg" style="width:100%;" alt="photo">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="images/521_7.jpg" style="width:50%; display: block; margin: auto;" alt="photo">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                    <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin-top: 0;">
+
+<!-- PROJECT DIVIDER-->
+
+<div class="grid">
+    <div class="item footer"><p><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">jackmags260@gmail.com</a></p></div>
+    <div class="item footer"><p><a href="#bookmark">Top &#8593;</a></p></div>
+</div>
+</div>
+
+<script>
+    var curModal;
+
+    function openModal(modalNum) {
+        document.getElementById("myModal" + modalNum).style.display = "block";
+        curModal = modalNum;
+    }
+
+    function closeModal(modalNum) {
+        document.getElementById("myModal" + modalNum).style.display = "none";
+        curModal = modalNum;
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides" + curModal);
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    function toggleMute() {
+
+        var video=document.getElementById("myVideo")
+
+        if(video.muted){
+            video.muted = false;
+        } else {
+            video.muted = true;
+        }
+
+    }
+</script>
+
+</body>
+</html>
