@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/gva4kcm.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/images/home_button-07.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNCN5802QP"></script>
     <script>
@@ -14,12 +16,17 @@
         gtag('js', new Date());
 
         gtag('config', 'G-WNCN5802QP');
+        
+        $(document).on('shown.bs.collapse', function(event){
+            //console.log( "in! print e: " +event.type);
+            event.target.scrollIntoView();
+        });
     </script>
     <style>
         body {
             font-family: runda, sans-serif;
             font-weight: 300;
-            font-size: large;
+            font-size: medium;
             line-height: 1.5;
             margin: 0;
         }
@@ -65,7 +72,7 @@
         .brief {
             width: 50%;
             text-align: left;
-            font-size: large;
+            font-size: medium;
             padding-left: 70px;
             padding-top: 70px;
             margin: 0;
@@ -150,7 +157,7 @@
 
         /*footer*/
         .footer {
-            font-size: large;
+            font-size: medium;
             padding-left: 70px;
             padding-top: 17px;
             height: 45px;
@@ -161,6 +168,30 @@
             background-color: deeppink;
             padding-left: 70px;
             overflow: auto;
+        }
+        
+        .collapse {display:none}
+        .collapse.in {display:block}
+        tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}
+
+        .footy {
+            width: 50%;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-family: runda, sans-serif;
+            font-size: medium;
+            font-weight: 300;
+            transition: 0.4s;
         }
 
         /*page in two sections*/
@@ -404,6 +435,11 @@
             .imgbump {
                 display: none;
             }
+            
+             .footy {
+                padding-top: 50px;
+                width: 100%;
+            }
         }
 
 
@@ -532,12 +568,27 @@
 
     <!-- PROJECT DIVIDER -->
 
-
-
+    <!-- FOOTER -->
     <div class="grid">
-        <div class="item footer"><p><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">jackmags260@gmail.com</a></p></div>
-        <div class="item footer"><p><a href="#bookmark">Top &#8593;</a></p></div>
+        <div class="item footer"><a href="#demo" class="btn btn-info" data-toggle="collapse">info &#8595;</a></div>
+        <div class="item footer"><p><a href="#bookmark">top &#8593;</a></p></div>
     </div>
+
+    <div id="demo" class="collapse" data-role="view">
+        <div class="container grid" style="margin-top: -25px;">
+            <div class="item">
+                <div class="left">
+                    <p>Thanks for stopping by &#9786;<br><br>I'm a graphic designer, creative strategist, researcher, and artist.<br>I focus on identity, sustainability, communication, and storytelling.<br><br>connect with me by...<br><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">email</a>&#8599;<br><a href="images/jackmagnus_resume.pdf" target="_blank">resume&#8599;</a><br><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="picbox">
+                    <div class="footy"><img src="images/headshot.jpg" style="width: 100%; height:60vh; object-fit: cover;" alt="jackmagnus"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
 
 </div>
 
