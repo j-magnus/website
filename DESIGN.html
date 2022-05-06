@@ -16,7 +16,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-WNCN5802QP');
-        
+
         $(document).on('shown.bs.collapse', function(event){
             //console.log( "in! print e: " +event.type);
             event.target.scrollIntoView();
@@ -169,8 +169,8 @@
             padding-left: 70px;
             overflow: auto;
         }
-        
-         .collapse {display:none}
+
+        .collapse {display:none}
         .collapse.in {display:block}
         tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}
 
@@ -388,12 +388,12 @@
             .lgriddy {
                 padding-right: 0;
             }
-            
+
             .navpages {
                 font-size: small;
             }
-            
-             .footer {
+
+            .footer {
                 font-size: small;
             }
 
@@ -435,8 +435,8 @@
             .imgbump {
                 display: none;
             }
-            
-             .footy {
+
+            .footy {
                 padding-top: 50px;
                 width: 100%;
             }
@@ -450,116 +450,227 @@
 
     <div class="container grid navmaster" style="height: 45px; width: 100%;">
         <div class="item topnav"><a href="index.html"><img src="images/home_button-07.png" alt="homebutton"></a></div>
-        <div class="item topnav"><table class="navpages"><tr><td><span style="font-style: italic; padding-left: 2px;">DESIGN</span></td><td><a href="MOTION.html">MOTION</a></td><td><a href="ILLUSTRATION.html">ILLUSTRATION</a></td><td><a href="WRITING.html">WRITING</a></td></tr></table></div>
+        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="WRITING.html">WRITING</a></td><td><a href="ARCHIVE.html">ARCHIVE</a></td></tr></table></div>    </div>
+
+    <div class="container grid">
+        <div class="item">
+            <div class="bumper"></div>
+            <div class="left"><p>COMMODIFIED BODIES<br>exhibition | research<br><br>Sustained investigation on constructed value systems of emerging adults in complex, shared, hypersexual environments.<br><br>
+                Exhibited in 'Artifact' Design Exhibition.</p>
+            </div>
+        </div>
+
+        <div class="item" id="bookmark">
+            <div class="imgbump"></div>
+            <div class="picbox" style="padding-top: 0;">
+                <img src="images/CB_01.jpg" class="bannerimage hover-shadow cursor"
+                     onclick="openModal(6);currentSlide(1)" alt="photo">
+            </div>
+
+            <p class="brief">Commodified Bodies was a response to quantitative analysis, qualitative interviewing, and literary research on hypersexual spaces.<br><br>
+                It was a call for active effort and nurturing in relationships with sexual partners, non-sexual partners, and the relationship with the self. Performance and Graphic Design were used to display the unconscious way our perceptions influence the value we attribute to our bodies.
+
+            <div class="section">
+                <div class="row">
+                    <div class="column lgriddy">
+                        <img src="images/CB_2.gif" style="width:100%;"
+                             onclick="openModal(6);currentSlide(2)" class="hover-shadow cursor" alt="photo">
+                    </div>
+                    <div class="column rgriddy">
+                        <img src="images/CB_03.png" style="width:100%;"
+                             onclick="openModal(6);currentSlide(3)" class="hover-shadow cursor" alt="photo">
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="brief">A 9x9 Grid was developed to emblemize the research.<br>
+                It codified the sexual, non-sexual, and relationship with the self;<br>
+                Along with the digital, physical, and external spaces<br>
+                where relationships take place.<br>
+            </p>
+
+            <div class="picbox">
+                <img src="images/CB_4.gif" style="width:100%;"
+                     onclick="openModal(6);currentSlide(3)" class="hover-shadow cursor" alt="photo">
+            </div>
+
+            <p class="brief">For 4 minutes, participants sat with an artist and were asked to talk of a relationship of theirs that needs love. The artist used performative mark making to record this conversation.
+                An image of the participant and the print from their conversation were then used and processed through cyanotype printing.
+            </p>
+
+            <div class="picbox">
+                <img src="images/CB_5.jpg" style="width:100%;"
+                     onclick="openModal(6);currentSlide(4)" class="hover-shadow cursor" alt="photo">
+            </div>
+
+            <div class="picbox">
+                <img src="images/CB_08.png" style="width:100%;"
+                     onclick="openModal(6);currentSlide(8)" class="hover-shadow cursor" alt="photo">
+            </div>
+
+        </div>
+
+        <div id="myModal6" class="modal">
+            <span class="close cursor" onclick="closeModal(6)" style="font-weight: lighter">x</span>
+            <div class="modal-content">
+
+                <div class="mySlides6">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="images/CB_01.jpg" style="width:90%; margin:auto;" alt="photo">
+                </div>
+
+
+                <div class="mySlides6">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="images/CB_2.gif" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides6">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="images/CB_03.png" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+
+                <div class="mySlides6">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="images/CB_4.gif" style="width:90%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides6">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="images/CB_05.jpg" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides6">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="images/CB_06.jpg" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides6">
+                    <div class="numbertext">7 /9</div>
+                    <img src="images/CB_07.jpg" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+
+                <div class="mySlides6">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="images/CB_08.png" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides6">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="images/CB_09.png" style="width:75%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+            </div>
+        </div>
     </div>
+    <hr style="margin-top: 0;">
 
-            <div class="container grid">
-                <div class="item">
-                    <div class="bumper"></div>
-                    <div class="left"><p>NOGGEN<br>branding | identity<br><br>Proposed and developed branding and identity system.<br><br>
-                        Designed for print, digital, and textile media.</p>
+    <!-- PROJECT DIVIDER-->
+
+    <div class="container grid">
+        <div class="item">
+            <div class="left"><p>NOGGEN<br>branding | identity<br><br>Proposed and developed branding and identity system.<br><br>
+                Designed for print, digital, and textile media.</p>
+            </div>
+        </div>
+
+        <div class="item" id="bookmark">
+            <div class="picbox">
+                <img src="images/NGN_1.gif" class="bannerimage hover-shadow cursor"
+                     onclick="openModal(1);currentSlide(1)" alt="photo">
+            </div>
+
+            <p class="brief">Noggen is a luxury fashion label for top of the head adornment.<br><br>
+                Serving fashion forward, accesory enthusiasts, these hats help its wearers stay fresh and decked out head to toe. Each season they have a new line. From knit wear to cotton caps, these hats are fun, funky, and functional.
+            </p>
+
+            <div class="section">
+                <div class="row">
+                    <div class="column lgriddy">
+                        <img src="images/NGN_3.png" style="width:100%;"
+                             onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor" alt="photo">
+                    </div>
+                    <div class="column rgriddy">
+                        <img src="images/NGN_4.png" style="width:100%;"
+                             onclick="openModal(1);currentSlide(3)" class="hover-shadow cursor" alt="photo">
                     </div>
                 </div>
+            </div>
 
-                <div class="item" id="bookmark">
-                    <div class="imgbump"></div>
-                    <div class="picbox" style="padding-top: 0;">
-                        <img src="images/NGN_1.gif" class="bannerimage hover-shadow cursor"
-                             onclick="openModal(1);currentSlide(1)" alt="photo">
+            <div class="section">
+                <div class="row">
+                    <div class="column lgriddy">
+                        <img src="images/NGN_08.gif" style="width:100%;"
+                             onclick="openModal(1);currentSlide(4)" class="hover-shadow cursor" alt="photo">
                     </div>
-
-                    <p class="brief">Noggen is a luxury fashion label for top of the head adornment.<br><br>
-                            Serving fashion forward, accesory enthusiasts, these hats help its wearers stay fresh and decked out head to toe. Each season they have a new line. From knit wear to cotton caps, these hats are fun, funky, and functional.
-                    </p>
-
-                    <!--
-                    <div class="picbox">
-                        <img src="images/NGN_2.png" style="width:100%;"
-                                 onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-                    </div>
-                    -->
-
-                    <div class="section">
-                        <div class="row">
-                            <div class="column lgriddy">
-                                <img src="images/NGN_3.png" style="width:100%;"
-                                         onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor" alt="photo">
-                            </div>
-                            <div class="column rgriddy">
-                                <img src="images/NGN_4.png" style="width:100%;"
-                                         onclick="openModal(1);currentSlide(3)" class="hover-shadow cursor" alt="photo">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <div class="row">
-                            <div class="column lgriddy">
-                                <img src="images/NGN_08.gif" style="width:100%;"
-                                     onclick="openModal(1);currentSlide(4)" class="hover-shadow cursor" alt="photo">
-                            </div>
-                            <div class="column rgriddy">
-                                <img src="images/NGN_09.png" style="width:100%;"
-                                     onclick="openModal(1);currentSlide(5)" class="hover-shadow cursor" alt="photo">
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="brief">Oh you got a bad haircut?<br>
-                            Ooops– that’s not your color!<br>
-                            That bleach really fried your hair?<br>
-                            Easy, greasy, beautiful?<br>
-                    </p>
-
-                    <div class="picbox">
-                            <img src="images/NGN_6.gif" style="width:100%;"
-                                 onclick="openModal(1);currentSlide(6)" class="hover-shadow cursor" alt="photo">
-                    </div>
-
-                </div>
-
-                    <div id="myModal1" class="modal">
-                        <span class="close cursor" onclick="closeModal(1)" style="font-weight: lighter">x</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides1">
-                                <div class="numbertext">1 / 6</div>
-                                <img src="images/NGN_1.gif" style="width:100%; margin:auto;" alt="photo">
-                            </div>
-
-
-                            <div class="mySlides1">
-                                <div class="numbertext">2 / 6</div>
-                                <img src="images/NGN_3.png" style="width:65%; display: block; margin: auto;" alt="photo">
-                            </div>
-
-
-                            <div class="mySlides1">
-                                <div class="numbertext">3 / 6</div>
-                                <img src="images/NGN_4.png" style="width:65%; display: block; margin: auto;" alt="photo">
-                            </div>
-
-                            <div class="mySlides1">
-                                <div class="numbertext">4 / 6</div>
-                                <img src="images/NGN_08.gif" style="width:65%; display: block; margin: auto;" alt="photo">
-                            </div>
-
-                            <div class="mySlides1">
-                                <div class="numbertext">5 / 6</div>
-                                <img src="images/NGN_09.png" style="width:65%; display: block; margin: auto;" alt="photo">
-                            </div>
-
-                            <div class="mySlides1">
-                                <div class="numbertext">6 / 6</div>
-                                <img src="images/NGN_6_5.png" style="width:75%; display: block; margin: auto;" alt="photo">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-                            <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-                        </div>
+                    <div class="column rgriddy">
+                        <img src="images/NGN_09.png" style="width:100%;"
+                             onclick="openModal(1);currentSlide(5)" class="hover-shadow cursor" alt="photo">
                     </div>
                 </div>
+            </div>
+
+            <p class="brief">Oh you got a bad haircut?<br>
+                Ooops– that’s not your color!<br>
+                That bleach really fried your hair?<br>
+                Easy, greasy, beautiful?<br>
+            </p>
+
+            <div class="picbox">
+                <img src="images/NGN_6.gif" style="width:100%;"
+                     onclick="openModal(1);currentSlide(6)" class="hover-shadow cursor" alt="photo">
+            </div>
+
+        </div>
+
+        <div id="myModal1" class="modal">
+            <span class="close cursor" onclick="closeModal(1)" style="font-weight: lighter">x</span>
+            <div class="modal-content">
+
+                <div class="mySlides1">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/NGN_1.gif" style="width:100%; margin:auto;" alt="photo">
+                </div>
+
+
+                <div class="mySlides1">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/NGN_3.png" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+
+                <div class="mySlides1">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/NGN_4.png" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides1">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/NGN_08.gif" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides1">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/NGN_09.png" style="width:65%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <div class="mySlides1">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/NGN_6_5.png" style="width:75%; display: block; margin: auto;" alt="photo">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+            </div>
+        </div>
+    </div>
     <hr style="margin-top: 0;">
 
     <!-- PROJECT DIVIDER-->
@@ -584,23 +695,23 @@
                 <div class="row">
                     <div class="column lgriddy">
                         <img src="images/TANA_2.png" style="width:100%;"
-                                 onclick="openModal(2);currentSlide(2)" class="hover-shadow cursor" alt="photo">
+                             onclick="openModal(2);currentSlide(2)" class="hover-shadow cursor" alt="photo">
                     </div>
                     <div class="column rgriddy">
                         <img src="images/TANA_3.png" style="width:100%;"
-                                 onclick="openModal(2);currentSlide(3)" class="hover-shadow cursor" alt="photo">
+                             onclick="openModal(2);currentSlide(3)" class="hover-shadow cursor" alt="photo">
                     </div>
                 </div>
             </div>
 
-                <p class="brief">TANA is a full service agency that offers marketing and sales for brands entering e-commerce.<br><br>
-                        The brand refresh introduced TANA into Portu Sunberg’s brand family, giving the team an integrated aesthetic, feel, and visual strategy.
-                </p>
+            <p class="brief">TANA is a full service agency that offers marketing and sales for brands entering e-commerce.<br><br>
+                The brand refresh introduced TANA into Portu Sunberg’s brand family, giving the team an integrated aesthetic, feel, and visual strategy.
+            </p>
 
-                <div class="picbox">
-                    <img src="images/TANA_4.png" style="width:100%;"
-                             onclick="openModal(2);currentSlide(4)" class="hover-shadow cursor" alt="photo">
-                </div>
+            <div class="picbox">
+                <img src="images/TANA_4.png" style="width:100%;"
+                     onclick="openModal(2);currentSlide(4)" class="hover-shadow cursor" alt="photo">
+            </div>
 
 
 
@@ -611,7 +722,7 @@
 
                     <div class="mySlides2">
                         <div class="numbertext">1 / 4</div>
-                       <img src="images/TANA_0.png" style="width:100%; display: block; margin: auto;" alt="photo">
+                        <img src="images/TANA_0.png" style="width:100%; display: block; margin: auto;" alt="photo">
                     </div>
 
                     <div class="mySlides2">
@@ -641,54 +752,6 @@
 
     <!-- PROJECT DIVIDER-->
 
-    <div class="container grid">
-        <div class="item">
-            <div class="left"><p>OREO'S KEY ISSUES PROPOSAL<br>marketing | strategy<br><br>Research and analysis into the Oreo brand's consumer behavior.<br><br>
-                Final deliverable included recommendations and insights, including ideated "Avocado Oreos".
-            </p>
-            </div>
-        </div>
-
-        <div class="item">
-
-            <div class="picbox projtop">
-                <video width="100%" autoplay loop muted onclick="openModal(4);currentSlide(1)"
-                       class="hover-shadow cursor">
-                    <source src="images/OREO.mp4" type="video/mp4">
-                    unsupported video
-                </video>
-            </div>
-
-            <div style="height: 70px;width: 100%;display: block;"></div>
-
-            <div id="myModal4" class="modal">
-                <span class="close cursor" onclick="closeModal(4)" style="font-weight: lighter">x</span>
-                <div class="modal-content">
-
-                    <div class="mySlides4">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="images/OREO_1.jpg" style="width:45%; display: block; margin: auto;" alt="photo">
-                    </div>
-
-                    <div class="mySlides4">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="images/OREO_5.jpg" style="width:85%; display: block; margin: auto;" alt="photo">
-                    </div>
-
-                    <div class="mySlides4">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="images/OREO_4.png" style="width:85%; display: block; margin: auto;" alt="photo">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-                    <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr style="margin-top: 0;">
-
     <!-- PROJECT DIVIDER-->
 
     <div class="container grid">
@@ -711,12 +774,12 @@
                 <div class="row">
                     <div class="column lgriddy">
                         <img src="images/MNR_2.jpg" style="width:100%;"
-                                 onclick="openModal(5);currentSlide(3)" class="hover-shadow cursor" alt="photo">
+                             onclick="openModal(5);currentSlide(3)" class="hover-shadow cursor" alt="photo">
                     </div>
 
                     <div class="column rgriddy">
                         <img src="images/MNR_3.jpg" style="width:100%;"
-                                 onclick="openModal(5);currentSlide(5)" class="hover-shadow cursor" alt="photo">
+                             onclick="openModal(5);currentSlide(5)" class="hover-shadow cursor" alt="photo">
                     </div>
                 </div>
 
@@ -777,7 +840,7 @@
 
     <!-- PROJECT DIVIDER-->
 
-      <!-- FOOTER -->
+    <!-- FOOTER -->
     <div class="grid">
         <div class="item footer"><a href="#demo" class="btn btn-info" data-toggle="collapse">info &#8595;</a></div>
         <div class="item footer"><p><a href="#bookmark">top &#8593;</a></p></div>
@@ -798,7 +861,7 @@
         </div>
     </div>
     <!-- END -->
-    
+
 </div>
 
 <script>
