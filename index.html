@@ -45,6 +45,12 @@
             color: black;
         }
 
+        p a:hover {
+            transition: all 0.5s ease;
+        }
+        p a:hover {
+            color: #D2D622;
+        }
 
         .left {
             padding: 70px 0 0 70px;
@@ -58,8 +64,28 @@
             margin-top: 0;
         }
 
-        img {
-            display: block;
+        .mycover {
+            display:block;
+            overflow: hidden;
+            width: 500px;
+            height: 500px;
+            background-color: #D2D622;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+
+        .mycover img{
+            width:100%;
+            object-fit: cover;
+            transition: all 1s;
+        }
+
+        .mycover img:hover {
+            transform: scale(1.025);
+        }
+
+        .mycover:hover {
+            border-radius: 20px;
         }
 
         video {
@@ -91,19 +117,24 @@
             border-bottom: 1px solid black;
         }
 
+        .navmaster td a{
+            padding: 5px;
+            border-radius: 5px;
+        }
+
         .topnav {
             padding-top: 10px;
         }
 
         .topnav img {
             width: 20px;
-            padding-top: 5px;
             padding-left: 70px;
+            padding-top: 5px;
         }
 
         .navpages {
             width: 100%;
-            padding-left: 66px;
+            padding-left: 62px;
         }
 
         .navpages td {
@@ -111,10 +142,26 @@
         }
 
         .navpages a{
-            transition: padding-left 0.1s
+            transition: border-radius 1s ease, padding-left 1s ease, border 1s ease;
         }
         .navpages a:hover{
-            font-style: italic;
+            padding-left: 7px;
+            border-radius: 50px;
+            border: 1px solid black;
+        }
+
+
+       ul {
+           list-style-type: none;
+           padding: 0;
+           margin: 0;
+       }
+
+        li {
+            transition: padding-left 0.5s;
+        }
+
+        li:hover{
             padding-left: 2px;
         }
 
@@ -149,9 +196,6 @@
         .collapse.in {display:block}
         tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}
 
-        .footy {
-            width: 50%;
-        }
 
         button {
             background-color: white;
@@ -232,7 +276,9 @@
             }
 
             .navpages {
-                padding-top: 5px;
+                margin-bottom: 35px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 border-bottom: 1px solid black;
             }
 
@@ -246,26 +292,6 @@
                 display: none;
             }
 
-            .footy {
-                padding-top: 50px;
-                width: 100%;
-            }
-        }
-
-        #mydesign:hover {
-            cursor: url(images/arrow-04.png), auto;
-        }
-
-        #mymotion:hover {
-            cursor: url(images/arrow-07.png), auto;
-        }
-
-        #myillustration:hover {
-            cursor: url("images/arrow_2-08.png"), auto;
-        }
-
-        #mywriting:hover {
-            cursor: url("images/arrow-06.png"), auto;
         }
 
 
@@ -279,60 +305,25 @@
         <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="WRITING.html">WRITING</a></td><td><a href="ARCHIVE.html">ARCHIVE</a></td></tr></table></div>
     </div>
 
-    <div style="background-color: white">
+    <div style="background-color: white;">
         <div class="blockcontent">
             <div class="container grid" id="bookmark">
                 <div class="item">
                     <div class="bumper"></div>
-                    <div class="left"><p>Jack Magnus<br><br>is a working creative that specializes in <a href="DESIGN.html">design,</a> <a href="MOTION.html">motion,</a> and <a href="WRITING.html">writing</a>–<br><br>driven to create work that explores cultural performances.<br><br><br>
-                    </p>
+                    <div class="left"><p>Jack Magnus<br><br>is a working creative that specializes in <a href="DESIGN.html">design,</a> <a href="MOTION.html">motion,</a> and <a href="WRITING.html">writing</a>–<br>driven to create work that explores cultural performances.<br>
+                        <br>Thanks for stopping by &#9786;<br>I'm currently working in NYC as a designer with <a href="https://www.thebarcodegroup.com" target="_blank" style="text-decoration: underline;">The Barcode Group</a> and independently as a designer and digital strategist.<br><br>get in touch for your next project...<br></p><ul><li><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">email</a>&#8599;</li><li><a href="images/jackmagnus_resume.pdf" target="_blank">resume&#8599;</a></li><li><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</li></ul>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="imgbump"></div>
-                    <div class="picbox" style="padding-top: 0;">
-                        <a id="mydesign" href="DESIGN.html"><img src="images/CB_01.jpg" class="biopic" alt="design"></a>
-                    </div>
-
-                     <div class="picbox">
-                        <a id="mymotion" href="MOTION.html"> <img src="images/banners-02.gif" class="biopic" alt="motion"></a>
-                    </div>
-
                     <div class="picbox">
-                        <a id="mywriting" href="WRITING.html"> <img src="images/banners-04.png" class="biopic" alt="writing"></a>
+                        <div class="mycover"><img src="images/headshot.jpg" alt="jackmagnus"></div>
                     </div>
-
-                    <div class="picbox">
-                        <a id="myillustration" href="ARCHIVE.html"><img src="images/banners-03.png" class="biopic" alt="archive"></a>
-                    </div>
-
-
-
                 </div>
             </div>
-            <hr>
 
             <!-- FOOTER -->
-            <div class="grid">
-                <div class="item footer"><a href="#demo" class="btn btn-info" data-toggle="collapse">info &#8595;</a></div>
-                <div class="item footer"><p><a href="#bookmark">top &#8593;</a></p></div>
-            </div>
-
-            <div id="demo" class="collapse" data-role="view">
-                <div class="container grid" style="margin-top: -45px;">
-                    <div class="item">
-                        <div class="left">
-                            <p>Thanks for stopping by &#9786;<br><br>I'm a graphic designer, creative strategist, researcher, and artist.<br>I focus on identity, motion, and narrative work.<br><br>reach me by...<br><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">email</a>&#8599;<br><a href="images/jackmagnus_resume.pdf" target="_blank">resume&#8599;</a><br><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="picbox">
-                            <div class="footy"><img src="images/headshot.jpg" style="width: 100%; height:60vh; object-fit: cover;" alt="jackmagnus"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- END -->
 
 
