@@ -26,7 +26,7 @@
         body {
             font-family: runda, sans-serif;
             font-weight: 300;
-            font-size: medium;
+            font-size: small;
             line-height: 1.5;
             margin: 0;
         }
@@ -72,7 +72,7 @@
         .brief {
             width: 50%;
             text-align: left;
-            font-size: medium;
+            font-size: small;
             padding-left: 70px;
             padding-top: 70px;
             margin: 0;
@@ -116,19 +116,24 @@
             border-bottom: 1px solid black;
         }
 
+        .navmaster td a{
+            padding: 5px;
+            border-radius: 5px;
+        }
+
         .topnav {
             padding-top: 10px;
         }
 
         .topnav img {
             width: 20px;
-            padding-top: 5px;
             padding-left: 70px;
+            padding-top: 5px;
         }
 
         .navpages {
             width: 100%;
-            padding-left: 66px;
+            padding-left: 62px;
         }
 
         .navpages td {
@@ -136,11 +141,13 @@
         }
 
         .navpages a{
-            transition: padding-left 0.1s
+            transition: border-radius 1s ease, padding-left 1s ease, border 1s ease;
         }
-        .navpages a:hover{
-            font-style: italic;
-            padding-left: 2px;
+
+        .navpages a:hover {
+            padding-left: 7px;
+            border-radius: 50px;
+            border: 1px solid black;
         }
 
         .bumper {
@@ -157,26 +164,35 @@
 
         /*footer*/
         .footer {
-            font-size: medium;
+            font-size: small;
             padding-left: 70px;
             padding-top: 17px;
             height: 45px;
         }
 
-        .footer td {
-            width: 20%;
-            background-color: deeppink;
-            padding-left: 70px;
-            overflow: auto;
+        .services {
+            width:100%;
+            vertical-align: top;
+            margin: 0 0 15px 0;
+        }
+
+        .services td {
+            width: 25%;
+            margin:0;
+            vertical-align: top;
+
+        }
+
+        .bucket span{
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 50px;
+            margin-left: -10px;
         }
 
         .collapse {display:none}
         .collapse.in {display:block}
         tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}
-
-        .footy {
-            width: 50%;
-        }
 
         button {
             background-color: white;
@@ -192,6 +208,20 @@
             font-size: medium;
             font-weight: 300;
             transition: 0.4s;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            transition: padding-left 0.5s;
+        }
+
+        li:hover{
+            padding-left: 2px;
         }
 
         /*page in two sections*/
@@ -276,6 +306,7 @@
             right: 25px;
             font-size: 35px;
             font-weight: bold;
+            z-index: 2;
         }
 
         .close:hover,
@@ -291,43 +322,33 @@
 
         /* Next & previous buttons */
         .prev {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            left: -50px;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: 300;
-            font-size: 30px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 45%;
+            height: 100vh;
             user-select: none;
             -webkit-user-select: none;
+            z-index: 1;
         }
 
         .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            right: -50px;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: 300;
-            font-size: 30px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100vh;
             user-select: none;
             -webkit-user-select: none;
+            z-index: 1;
         }
 
         /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
+        .prev:hover{
+            cursor: w-resize;
+        }
         .next:hover {
-            color: rgb(128, 128, 128);
+            cursor: e-resize;
         }
 
         /* Number text (1/3 etc) */
@@ -436,9 +457,8 @@
                 display: none;
             }
 
-            .footy {
-                padding-top: 50px;
-                width: 100%;
+            .bucket {
+                margin-top: -70px;
             }
         }
 
@@ -450,20 +470,33 @@
 
     <div class="container grid navmaster" style="height: 45px; width: 100%;">
         <div class="item topnav"><a href="index.html"><img src="images/home_button-07.png" alt="homebutton"></a></div>
-        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="WRITING.html">WRITING</a></td><td><a href="ARCHIVE.html">ARCHIVE</a></td></tr></table></div>    </div>
+        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a style="border-radius: 50px; padding-left: 7px; border: 1px solid black;" href="MOTION.html">MOTION</a></td><td><a href="WRITING.html">WRITING</a></td><td><a href="ARCHIVE.html">ARCHIVE</a></td></tr></table></div>    </div>
 
     <!-- PROJECT DIVIDER-->
 
-    <div class="bumper"></div>
     <div class="container grid">
         <div class="item">
-            <div class="left"><p>Pardon while I snooze, take a look at clips from my motion work.<br><br>Check my <a href="https://vimeo.com/jackmagnus" style="text-decoration: underline;" target="_blank">vimeo</a> for full length work.</p>
+            <div class="bumper"></div>
+            <div class="left"><p>The Barcode Group<br>identity | animation<br><br>Animation for the official press release of <a href="https://www.thebarcodegroup.com" style="text-decoration: underline;" target="_blank">The Barcode Group.</a> </p>
             </div>
         </div>
 
         <div class="item" id="bookmark">
-            <div class="picbox" style="padding-top:0;">
-                <img src="images/NAP.gif" style="width:100%;" alt="photo">
+            <div class="picbox" style="padding-top: 0;">
+                <img src="images/TBG_00.gif" style="width:100%;" onclick="openModal(4);currentSlide(1)" class="hover-shadow cursor" alt="photo">
+            </div>
+        </div>
+
+        <div id="myModal4" class="modal">
+            <span class="close cursor" onclick="closeModal(4)" style="font-weight: lighter">x</span>
+            <div class="modal-content">
+
+                <div class="mySlides4">
+                    <div class="video" style="padding-bottom: 80%">
+                        <iframe src="https://player.vimeo.com/video/757319816?h=c17aee81d7" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -570,35 +603,6 @@
 
     <!-- PROJECT DIVIDER -->
 
-    <div class="container grid">
-        <div class="item">
-            <div class="left"><p>BEGGING TO BE UNTOUCHED<br>hand drawn animation | narrative<br><br>Extra short animation embodying the American West.</p>
-            </div>
-        </div>
-
-        <div class="item" id="bookmark">
-            <div class="picbox">
-                <img src="images/BTBU.gif" style="width:100%;" onclick="openModal(3);currentSlide(1)" class="hover-shadow cursor" alt="photo">
-            </div>
-        </div>
-
-        <div id="myModal3" class="modal">
-            <span class="close cursor" onclick="closeModal(3)" style="font-weight: lighter">x</span>
-            <div class="modal-content">
-
-                <div class="mySlides3">
-                    <div class="video" style="padding-bottom: 80%">
-                        <iframe src="https://player.vimeo.com/video/656843135?h=ba5e00db12" width="640" height="512" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <hr style="margin-top: 0;">
-
     <!-- PROJECT DIVIDER-->
 
 
@@ -612,15 +616,25 @@
         <div class="container grid" style="margin-top: -25px;">
             <div class="item">
                 <div class="left">
-                    <p>Thanks for stopping by &#9786;<br><br>I'm a graphic designer, creative strategist, researcher, and artist.<br>I focus on identity, motion, and narrative work.<br><br>reach me by...<br><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">email</a>&#8599;<br><a href="images/jackmagnus_resume.pdf" target="_blank">resume&#8599;</a><br><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</p>
+                    <p>get in touch for your next project...<br><br></p><ul><li><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">email</a>&#8599;</li><li><a href="images/jackmagnus_resume.pdf" target="_blank">resume&#8599;</a></li><li><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</li></ul>
                 </div>
             </div>
-            <div class="item">
-                <div class="picbox">
-                    <div class="footy"><img src="images/headshot.jpg" style="width: 100%; height:60vh; object-fit: cover;" alt="jackmagnus"></div>
-                </div>
+            <div class="left">
+                <table class="services bucket">
+                    <tr><td><span>_me</span></td>
+                        <td><span>_projects</span></td>
+                        <td><span>_process</span></td>
+                        <td></td></tr>
+                </table>
+                <table class="services">
+                    <tr><td><ul><li>&#8982; NYC </li><li>University of Minnesota</li><li>Graphic Design B.F.A.</li><li>Marketing B.S.B.</li></ul></td>
+                        <td><ul><li>design + strategy</li><li>books</li><li>illustration</li></ul></td>
+                        <td style="width:50%; padding-right: 70px;">independent collaborator in brand management, creative media, and digital strategy. with a bias towards research, systems, and type.</td>
+                    </tr>
+                </table>
             </div>
         </div>
+        <div style="width:100%; height:70px;"></div>
     </div>
     <!-- END -->
 
