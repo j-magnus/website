@@ -621,6 +621,27 @@
                 <img src="images/TBG_02.png" style="width:100%;"
                      onclick="openModal(3);currentSlide(2)" class="hover-shadow cursor" alt="photo">
             </div>
+            
+            <div class="section">
+                <div class="row">
+                    <div class="column lgriddy">
+                        <video width="100%" autoplay loop muted onclick="openModal(3);currentSlide(3)"
+                               class="cursor archimg">
+                            <source src="images/TBG_Mock.mp4" type="video/mp4">
+                            unsupported video
+                        </video>
+                    </div>
+                    <div class="column rgriddy">
+                        <video width="100%" autoplay loop muted onclick="openModal(3);currentSlide(4)"
+                               class="cursor archimg">
+                            <source src="images/TBG_Color.mp4" type="video/mp4">
+                            unsupported video
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height:70px; width:70px; display: inline-block;"></div>
 
         </div>
 
@@ -629,15 +650,34 @@
             <div class="modal-content">
 
                 <div class="mySlides3">
-                    <div class="numbertext">1 / 2</div>
+                    <div class="numbertext">1 / 4</div>
                     <img src="images/TBG_01.png" style="width:100%; margin:auto;" alt="photo">
                 </div>
 
 
                 <div class="mySlides3">
-                    <div class="numbertext">2 / 2</div>
+                    <div class="numbertext">2 / 4</div>
                     <img src="images/TBG_02.png" style="width:100%; display: block; margin: auto;" alt="photo">
                 </div>
+                
+                <div class="mySlides3">
+                    <div class="numbertext">3 / 4</div>
+                    <div style="width: 30%; margin:auto;">
+                        <video width="100%" autoplay loop muted" class="cursor archimg">
+                        <source src="images/TBG_Mock.mp4" type="video/mp4">
+                        unsupported video
+                        </video>
+                    </div>
+                </div>
+
+                <div class="mySlides3">
+                    <div class="numbertext">4 / 4</div>
+                    <div style="width: 30%; margin:auto;">
+                        <video width="100%" autoplay loop muted" class="cursor archimg">
+                        <source src="images/TBG_Color.mp4" type="video/mp4">
+                        unsupported video
+                        </video>
+                    </div>
 
                 <a class="prev" onclick="plusSlides(-1)"></a>
                 <a class="next" onclick="plusSlides(1)"></a>
