@@ -36,23 +36,11 @@
         }
 
         .picbox {
-            padding-left: 70px;
             padding-top: 70px;
         }
 
         img {
             display: block;
-        }
-
-        .video {
-            position: absolute;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
-        }
-
-        .section {
-            padding-left: 70px;
-            padding-top: 70px;
         }
 
         .left {
@@ -113,18 +101,6 @@
             border: 1px solid black;
         }
 
-        .bumper {
-            width: 10px;
-            height: 45px;
-            display: block;
-        }
-
-        .imgbump {
-            width: 10px;
-            height: 45px;
-            display: block;
-        }
-
         .archimg {
             display:block;
             overflow: hidden;
@@ -145,12 +121,6 @@
 
         .archimg:hover {
             border-radius: 15px;
-        }
-
-        .archtext {
-            display:block;
-            width: 100%;
-            padding-top: 15px;
         }
 
         /*footer*/
@@ -242,136 +212,11 @@
             }
         }
 
-        /*slideshow stuff*/
-        .row {
-            display: -ms-flexbox; /* IE10 */
-            -ms-flex-wrap: wrap; /* IE10 */
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            flex: 1 0 calc(25% - 70px);
-            max-width: calc(25% - 70px);
-            margin: 35px;
-
-        }
-
-        .columndouble {
-            flex: 1 0 calc(50% - 70px);
-            max-width: calc(50% - 70px);
-            margin: 35px;
-
-        }
-
         .column img {
             vertical-align: middle;
             width: 100%;
             margin: 0;
         }
-
-
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: auto;
-            background-color: rgba(204, 204, 204, 0.95);
-        }
-
-        /* Modal Content */
-        .modal-content {
-            position: relative;
-            background-color: rgba(204, 204, 204, 0);
-            margin: auto;
-            padding: 0;
-            max-width: 1300px;
-        }
-
-        /* The Close Button */
-        .close {
-            color: white;
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            font-size: 35px;
-            font-weight: bold;
-            z-index: 2;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #808080;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-        /* Next & previous buttons */
-        .prev {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 45%;
-            height: 100vh;
-            user-select: none;
-            -webkit-user-select: none;
-            z-index: 1;
-        }
-
-        .next {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 45%;
-            height: 100vh;
-            user-select: none;
-            -webkit-user-select: none;
-            z-index: 1;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover{
-            cursor: w-resize;
-        }
-        .next:hover {
-            cursor: e-resize;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #808080;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        .demo {
-            opacity: 0.6;
-        }
-
-        img.hover-shadow {
-            transition: 0.3s;
-        }
-
-        .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-
 
         @media screen and (max-width: 700px) {
 
@@ -386,45 +231,19 @@
 
         @media screen and (max-width: 950px) {
 
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-
-            .columndouble {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 90%;
-            }
-
             .left {
                 padding-right: 70px;
                 padding-bottom: 70px;
             }
 
             .picbox {
-                padding: 0;
-            }
-
-            .section {
-                padding-left: 0;
+                padding-top: 140px;
             }
 
 
             .navpages {
                 padding-top: 5px;
                 border-bottom: 1px solid black;
-            }
-
-            .bumper {
-                width: 10px;
-                height: 80px;
-                display: block;
-            }
-
-            .imgbump {
-                display: none;
             }
 
             .bucket {
@@ -448,7 +267,7 @@
 
 <!-- CONTENT -->
 
-    <div id="bookmark" style="display: block; width: 95vh; margin:auto;">
+    <div id="bookmark" style="display: block; width: 90vh; margin:auto;">
 
         <div class="picbox">
         <video width="100%" autoplay loop muted
@@ -458,7 +277,11 @@
         </video>
     </div>
 
-     <div style="display: block; height: 70px; width:70px;"></div>
+     <div style="display:block; width:100%; margin-top: 35px;">
+         <p>Me? I got a bag of goodies and I’m on my way to the office now. Packed with enthusiasm, I have a learning mindset that I bring with me everywhere. It means that each project, team, and design has its own demands, and my favorite part is understanding how I can meet them. Creators need to have a magic bag with any tools at the ready, and a skillset in learning those tools is something I pride my work on. Systems, research, and type guide my choices. House plants, peanut butter banana toast, and amateur games of chess fuel my work. </p>
+     </div>
+
+     <div style="display: block; height: 35px; width:70px;"></div>
 
      <div style="display: block; width: 100%;">
          <div>
@@ -468,7 +291,7 @@
          </div>
      </div>
 
-     <div style="display: block; height: 15px; width:70px;"></div>
+     <div style="display: block; height: 35px; width:70px;"></div>
 
     </div>
 
