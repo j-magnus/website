@@ -377,7 +377,16 @@
         }
 
         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
+        
+        .sticker {
+            width:30vw;
+            display: block;
+            position: absolute;
+            top: 85vh;
+            right: 20%;
+            rotate: -5deg;
+        }
+        
         @media screen and (max-width: 700px) {
 
             .navpages {
@@ -434,6 +443,12 @@
 
             .bucket {
                 margin-top: -70px;
+            }
+            
+            .sticker {
+                top: 70vh;
+                right: -20px;
+                width: 35vw;
             }
         }
 
@@ -552,6 +567,9 @@
             
         </div>
     </div>
+    
+    <a href="https://falooda.party/" target="_blank"><img class="sticker" src="images/falooda_sticker.png"></a>
+
 
     <hr style="margin-top: 0;">
 
