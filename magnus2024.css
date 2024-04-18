@@ -1,0 +1,673 @@
+body {
+    font-family: runda, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0;
+    color: rgb(62,62,63);
+}
+
+.wrapper {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+</* TEXT STYLING*/>
+
+p {
+    padding-bottom: 0.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(62,62,63);
+}
+
+hr {
+    margin-bottom: -1px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -0.25px;
+}
+
+h2 {
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    line-height: 1.25;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: -0.5px;
+    margin-top: 0.2rem;
+    margin-bottom: 1.25rem;
+    line-height: 1;
+}
+
+.date{
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    padding-right: 4px;
+}
+
+.brief {
+    width: 50%;
+    text-align: left;
+    font-size: small;
+    padding-left: 70px;
+    padding-top: 70px;
+    margin: 0;
+}
+
+.left {
+    padding: 70px 0 0px 70px;
+    text-align: left;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.left p {
+    margin:0;
+    margin-bottom: 0.6rem;
+}
+
+.left a {
+    text-decoration: underline;
+}
+
+.left a:hover {
+    color: rgb(108,126,255);
+}
+
+/* IMAGE STYLING*/
+
+img {
+    display: block;
+}
+
+.picbox {
+    padding-left: 70px;
+    padding-bottom: 2px;
+}
+
+.picbox a:hover {
+    color: rgb(108,126,255);
+}
+
+.bannerimage {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+}
+
+.section {
+    padding-left: 70px;
+    padding-bottom: 2px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* TOP NAV */
+
+.navmaster {
+    display: block;
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    z-index: 1;
+    border-bottom: 1px solid rgb(62,62,63);
+}
+
+.topnav {
+    padding: 0.2rem 0.8rem;
+}
+
+.navtitle h1{
+    margin: 0;
+}
+
+.navpages {
+    width: 100%;
+    padding-top: 1.2rem;
+    padding-left: 55px;
+    margin: 0;
+}
+
+.navpages td {
+    width: 50%;
+    line-height: 1;
+}
+
+.navlink a{
+    padding: 0.1rem 0.6rem;
+    margin: 0 15px 0 0;
+    border: 1px solid rgba(108,126,255,0);
+    transition: 350ms ease;
+}
+
+.navlink a:hover {
+    border: 1px solid rgba(108,126,255,1);
+}
+
+.navlinkactive a{
+    border: 1px solid rgba(108,126,255,1);
+}
+
+.navmail {
+    text-align: right;
+}
+
+.navmail a{
+    padding: 2px 10px;
+    margin: 0 15px;
+    color: rgb(108,126,255);
+    transition: 350ms ease;
+}
+
+.navmail a:hover {
+    padding-right: 20px;
+}
+
+button {
+    background-color: white;
+    color: rgb(62,62,63);
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: runda, sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    transition: 0.4s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    transition: padding-left 0.5s;
+}
+
+li:hover{
+    padding-left: 2px;
+}
+
+/*footer*/
+.footer {
+    padding-left: 70px;
+    padding-top: 17px;
+    height: 45px;
+}
+
+.footerinfo {
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-bottom: 35px;
+}
+
+.services {
+    width:100%;
+    vertical-align: top;
+}
+
+.services td {
+    width: 25%;
+    margin:0;
+    vertical-align: top;
+}
+
+.collapse {display:none}
+.collapse.in {display:block}
+tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}
+
+
+/* PAGE IN TWO THIRDS */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    -ms-flex-wrap: wrap; /* IE10 */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* PROJECT COLUMNS -- 2 INSIDE */
+
+.column {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    max-width: 50%;
+    padding: 0;
+}
+
+.column img {
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0;
+}
+
+.lgriddy {
+    padding-right: 1px;
+}
+
+.rgriddy {
+    padding-left: 1px;
+}
+
+/* INDEX COLUMNS -- 4 WIDE */
+
+.columnarc {
+    flex: 1 0 calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    margin: 15px;
+
+}
+
+.columndouble {
+    flex: 1 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    margin: 15px;
+}
+
+/* ARCHIVE STYLING */
+
+.archimg {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.archimg img{
+    display: block;
+    width:100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.archimg img:hover {
+    transform: scale(1.025);
+}
+
+.archimg:hover {
+    border-radius: 4px;
+}
+
+.archtext {
+    display:block;
+    width: 100%;
+    padding-top: 8px;
+}
+
+/* SPACING */
+
+.bumper {
+    width: 10px;
+    height: 70px;
+    display: block;
+}
+
+/* SLIDESHOW STUFF */
+
+/* Modal Background */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 35px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(28, 28, 30, 0.98);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: rgba(204, 204, 204, 0);
+    margin: auto;
+    padding: 0;
+    width: 80vw;
+    height: 85vh;
+}
+
+.modal-content img {
+    margin: auto;
+    object-fit: contain;
+    width: 100%;
+    max-height: 85vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content video {
+    margin: auto;
+    object-fit: contain;
+    width: 100%;
+    max-height: 85vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    opacity: 0.2;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    opacity: 0.3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & Previous Buttons */
+.prev {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1;
+}
+
+.next {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1;
+}
+
+/* Modal Navigation */
+
+.prev:hover{
+    cursor: w-resize;
+}
+.next:hover {
+    cursor: e-resize;
+}
+
+/* Modal Number Text */
+.numbertext {
+    color: #808080;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pdfclick {
+    font-size: smaller;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* MSC ELEMENTS */
+
+.sticker {
+    width:30vw;
+    display: block;
+    position: absolute;
+    top: 85vh;
+    right: 20%;
+    rotate: -5deg;
+}
+
+.deskinfo {
+    display: block;
+}
+
+.mobileinfo {
+    display: none;
+}
+
+/* MEDIA WIDTHS */
+
+@media screen and (max-width: 950px) {
+
+    .mobileinfo {
+        display: block;
+    }
+
+    .deskinfo {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .left {
+        padding-right: 70px;
+        padding-bottom: 70px;
+    }
+
+    .picbox {
+        padding: 0 8px 2px 8px;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    .lgriddy {
+        padding: 0 1px 2px 8px;
+    }
+
+    .rgriddy {
+        padding: 0 8px 2px 1px;
+    }
+
+    .brief {
+        padding-right: 70px;
+    }
+
+    .navpages {
+        top: 0.2rem;
+        position: absolute;
+        right: 0;
+        width: 1%;
+        overflow: visible;
+        white-space: nowrap;
+    }
+
+    .navmaster {
+        height: 61px;
+    }
+
+    .navpages td{
+        text-align: right;
+    }
+
+    .navmail a:hover {
+        padding-right: 10px;
+    }
+
+    .bumper {
+        display: block;
+        height: 4px;
+    }
+
+    .bucket {
+        margin-top: -70px;
+    }
+
+    .columnarc {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 33%;
+    }
+
+    .columndouble {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 66%;
+    }
+
+    .footerinfo {
+        padding-bottom: 0;
+    }
+
+    .services {
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .columnarc {
+        -ms-flex: 35%;
+        flex: 35%;
+        max-width: 100%;
+    }
+
+    .columndouble {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .navmaster {
+        height: 90px;
+    }
+
+    .navpages {
+        position: relative;
+        top: -1.2rem;
+        width: 100%;
+        padding-left: 0.2rem;
+    }
+
+    .navpages td {
+        text-align: left;
+        width: 50%;
+    }
+
+    .navpages .navmail{
+        text-align: right;
+    }
+
+    .footer {
+        font-size: small;
+    }
+
+    .sticker {
+        top: 70vh;
+        right: -20px;
+        width: 35vw;
+    }
+
+    .picbox {
+        padding: 0;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    .lgriddy {
+        padding: 0;
+    }
+
+    .rgriddy {
+        padding: 0;
+    }
+
+    .brief {
+        padding: 70px;
+    }
+
+    .bumper {
+        display: none;
+    }
+
+}

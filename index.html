@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Jack Magnus</title>
-    <link rel="stylesheet" href="https://use.typekit.net/gva4kcm.css">
+    <link rel="stylesheet" href="/magnus2024.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tru3zlx.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/images/home_button-07.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNCN5802QP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -23,321 +22,381 @@
         });
     </script>
     <style>
-        body {
-            font-family: runda, sans-serif;
-            font-weight: 300;
-            font-size: small;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .wrapper {
-            box-sizing: border-box;
-            margin: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        p a:hover {
-            transition: all 0.5s ease;
-        }
-        p a:hover {
-            color: #D2D622;
-        }
-
-        .left {
-            padding: 70px 0 0 70px;
-            text-align: left;
-            position: sticky;
-            left: 0;
-            top: 0;
-        }
-
-        p {
-            margin-top: 0;
-        }
-
-        .mycover {
-            display:block;
-            overflow: hidden;
-            width: 450px;
-            height: 450px;
-            background-color: #D2D622;
-            border-radius: 10px;
-            transition: all 1s;
-        }
-
-        .mycover img{
-            width:100%;
-            object-fit: cover;
-            transition: all 1s;
-        }
-
-        .mycover img:hover {
-            transform: scale(1.025);
-        }
-
-        .mycover:hover {
-            border-radius: 20px;
-        }
-
-        video {
-            display: block;
-        }
-
-        .picbox {
-            padding-left: 70px;
-            padding-top: 70px;
-        }
-
-        .biopic {
-            width: 100%;
-            height: 375px;
-            object-fit: cover;
-        }
-
-        hr { margin: -1px auto; }
-
-        /*topnav*/
-
-        .navmaster {
-            display: block;
-            position: absolute;
-            background-color: white;
-            width: 100%;
-            height: 45px;
-            z-index: 1;
-            border-bottom: 1px solid black;
-        }
-
-        .navmaster td a{
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        .topnav {
-            padding-top: 10px;
-        }
-
-        .topnav img {
-            width: 20px;
-            padding-left: 70px;
-            padding-top: 5px;
-        }
-
-        .navpages {
-            width: 100%;
-            padding-left: 62px;
-        }
-
-        .navpages td {
-            width: 25%;
-        }
-
-        .navpages a{
-            transition: border-radius 1s ease, padding-left 1s ease, border 1s ease;
-        }
-        .navpages a:hover{
-            padding-left: 7px;
-            border-radius: 50px;
-            border: 1px solid black;
-        }
-
-
-       ul {
-           list-style-type: none;
-           padding: 0;
-           margin: 0;
-       }
-
-        li {
-            transition: padding-left 0.5s;
-        }
-
-        li:hover{
-            padding-left: 2px;
-        }
-
-        .bumper {
-            width: 10px;
-            height: 45px;
-            display: block;
-        }
-
-        .imgbump {
-            width: 10px;
-            height: 45px;
-            display: block;
-        }
-
-        /*footer*/
-        .footer {
-            font-size: small;
-            padding-left: 70px;
-            padding-top: 17px;
-            height: 45px;
-            z-index: 1;
-        }
-
-        .blockcontent {
-            position: relative;
-            background-color: white;
-            height: inherit;
-        }
-
-        .collapse {display:none}
-        .collapse.in {display:block}
-        tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}
-
-
-        button {
-            background-color: white;
-            color: black;
-            cursor: pointer;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-family: runda, sans-serif;
-            font-size: small;
-            font-weight: 300;
-            transition: 0.4s;
-        }
-
-        /*page in two sections*/
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-        }
-
-        .container {
-            width: 100%;
-            height: 100%;
-            justify-content: space-between;
-            align-content: space-between;
-        }
-
-        @media screen and (max-width: 950px) {
-            .container {
-                grid-template-columns: minmax(0, 1fr);
-            }
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 20%; /* IE10 */
-            flex: 20%;
-            max-width: 50%;
-            padding: 0;
-
-        }
-
-        .column img {
-            vertical-align: middle;
-            width: 100%;
-            margin: 0;
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 700px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-
-            .navpages {
-                font-size: small;
-            }
-            
-            .mycover {
-                width: 300px;
-                height: 300px;
-            }
-
-            .footer {
-                font-size: small;
-            }
-        }
-
-        @media screen and (max-width: 950px) {
-            .left {
-                padding-right: 70px;
-                padding-bottom: 70px;
-            }
-
-            .picbox {
-                padding: 0;
-                margin: 0 0 70px 0;
-            }
-            
-            .mycover {
-                margin: auto;
-            }
-
-            .navpages {
-                margin-bottom: 35px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid black;
-            }
-
-            .bumper {
-                width: 10px;
-                height: 80px;
-                display: block;
-            }
-
-            .imgbump {
-                display: none;
-            }
-
-        }
-
 
     </style>
 </head>
 <body>
 <div class="wrapper">
 
-    <div class="container grid navmaster" style="height: 45px; width: 100%;">
-        <div class="item topnav"><a href="index.html"><img src="images/home_button-07.png" alt="homebutton"></a></div>
-        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="WRITING.html">WRITING</a></td><td><a href="ARCHIVE.html">ARCHIVE</a></td></tr></table></div>
+    <div class="container grid navmaster">
+        <div class="item topnav">
+            <table class="navtitle"><tr><td><h1><a href="index.html">Jack Magnus</a></h1></td></tr></table>
+        </div>
+        <div class="item topnav">
+            <table class="navpages"><tr><td class="navlink"><a href="design.html">Work</a><a href="info.html">Info</a></td><td class="navmail"><a href="mailto:hello@jack-magnus.com">hello@jack-magnus.com</a></td></tr></table>
+        </div>
     </div>
 
-    <div style="background-color: white;">
-        <div class="blockcontent">
-            <div class="container grid" id="bookmark">
-                <div class="item">
-                    <div class="bumper"></div>
-                    <div class="left"><p>Jack Magnus<br><br>is a working creative that specializes in <a href="DESIGN.html">design,</a> <a href="MOTION.html">motion,</a> and <a href="WRITING.html">writing</a>–<br>driven to create work that explores cultural performances.<br>
-                        <br>in NYC as a designer with <a href="https://www.thebarcodegroup.com" target="_blank" style="text-decoration: underline;">The Barcode Group</a> and independent collaborator in brand management, creative media, and digital strategy.<br><br>&#9786; get in touch for your next project...<br></p><ul><li><a href = "mailto:jackmags260@gmail.com?subject=Jack you're so cool!">email</a>&#8599;</li><li><a href="images/jackmagnus_resume.pdf" target="_blank">resume&#8599;</a></li><li><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</li></ul>
-                    </div>
-                </div>
+    <!-- PROJECTS -->
 
-                <div class="item">
-                    <div class="imgbump"></div>
-                    <div class="picbox">
-                        <div class="mycover"><img src="images/headshot.jpg" alt="jackmagnus"></div>
-                    </div>
+    <div style="width: 100%; padding: 35px; box-sizing: border-box;" id="bookmark">
+        <div class="row">
+
+            <div style="transform: rotate(-10deg) translate(-70px, 20px); width: 35vh; position: absolute; z-index: 1;">
+                <div class="archimg" style="overflow: visible;">
+                    <a href="https://falooda.party/" target="_blank"><img src="images/falooda_sticker.png" alt="photo"></a>
                 </div>
             </div>
 
-            <!-- FOOTER -->
-            <!-- END -->
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/FE_ID_Cards_FullColor.png"
+                         onclick="openModal(1);currentSlide(1)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
 
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/1800.jpg" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(2)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/print_window_02-04.png" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(3)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/MWHO_01.gif" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(4)" alt="photo">
+                </div>
+
+                <div style="display: block; width: 35px; height: 35px;"></div>
+
+                <div class="archimg">
+                    <img src="images/MWHO_02.gif" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(5)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/PI_3.jpeg" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(6)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/WC_01.gif"
+                         onclick="openModal(1);currentSlide(7)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/iiiTheKitchen-13.png" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(8)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/iiiTheKitchen-14.png" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(9)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/VOICES.gif" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(10)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/GLW_Mock_Beauty.png"
+                         onclick="openModal(1);currentSlide(11)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <video width="100%" autoplay loop muted onclick="openModal(1);currentSlide(12)"
+                       class="cursor archimg" poster="images/BB01Photo.jpeg">
+                    <source src="images/BB01Reel.mp4" type="video/mp4">
+                    unsupported video
+                </video>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/BBPhoto.jpeg" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(13)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/ART_01.gif" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(14)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/GDES_01.gif" class=" hover-shadow cursor"
+                         onclick="openModal(1);currentSlide(15)" alt="photo">
+                </div>
+            </div>
+
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/meetme.png"
+                         onclick="openModal(1);currentSlide(16)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/FE_pLaYING_Poster.jpg"
+                         onclick="openModal(1);currentSlide(17)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/ILLI_VDAY.png"
+                         onclick="openModal(1);currentSlide(18)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/NAP.gif"
+                         onclick="openModal(1);currentSlide(19)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columndouble">
+                <div class="archimg">
+                    <img src="images/lanternfest.gif"
+                         onclick="openModal(1);currentSlide(20)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/ILLI_BTT_Sq.jpg"
+                         onclick="openModal(1);currentSlide(21)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
+
+            <div class="columnarc">
+                <div class="archimg">
+                    <img src="images/ILLI_BTT_02.jpg"
+                         onclick="openModal(1);currentSlide(22)" class="hover-shadow cursor" alt="photo">
+                </div>
+            </div>
 
         </div>
     </div>
+
+    <hr style="margin-top: 0;">
+
+    <!-- SLIDESHOW -->
+
+    <div id="myModal1" class="modal">
+        <span class="close cursor" onclick="closeModal(1)" style="font-weight: lighter">x</span>
+        <div class="modal-content">
+
+            <div class="mySlides1">
+                <img src="images/FE_ID_Cards_FullColor.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/1800.jpg" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/print_window_02-04.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/MWHO_01.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/MWHO_02.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/PI_3.jpeg" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/WC_01.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/iiiTheKitchen-13.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/iiiTheKitchen-14.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/VOICES.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/GLW_Mock_Beauty.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <video width="100%" autoplay loop muted>
+                    <source src="images/BB01Reel.mp4" type="video/mp4">
+                    unsupported video
+                </video>
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/BBPhoto.jpeg" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/ART_01.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/GDES_01.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/meetme.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/FE_pLaYING_Poster.jpg" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/ILLI_VDAY.png" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/NAP.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/lanternfest.gif" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/ILLI_BTT_Sq.jpg" alt="photo">
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/ILLI_BTT_02.jpg" alt="photo">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="grid">
+        <div class="item footer"><a href="#demo" class="btn btn-info" data-toggle="collapse">info &#8595;</a></div>
+        <div class="item footer"><a href="#bookmark">top &#8593;</a></div>
+    </div>
+
+    <div id="demo" class="collapse" data-role="view">
+        <div class="container grid" style="margin-top: -25px;">
+            <div class="item">
+                <div class="footerinfo">
+                    <p>&#9786; get in touch for your next project...</p><p><ul><li><a href = "mailto:hello@jack-magnus.com">email</a>&#8599;</li><li><a href="images/jackmagnus_resume.pdf" target="_blank">resume</a>&#8599;</li><li><a href="https://www.linkedin.com/in/jackmagnus/" target="_blank">connect</a>&#8599;</li></ul></p>
+                </div>
+            </div>
+            <div class="footerinfo">
+                <table class="services">
+                    <tr><td><p>projects:</p><ul><li>design</li><li><a href="https://vimeo.com/jackmagnus" target="_blank">motion</a></li><li>writing</li></ul></td>
+                        <td style="width:50%; padding-right: 70px;"><p>&#8982; NYC </p>working designer and independent collaborator in brand management, creative media and digital strategy. with a bias towards research, systems and type.</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+
 </div>
+
+<script>
+    var curModal;
+
+    function openModal(modalNum) {
+        document.getElementById("myModal" + modalNum).style.display = "block";
+        curModal = modalNum;
+    }
+
+    function closeModal(modalNum) {
+        document.getElementById("myModal" + modalNum).style.display = "none";
+        curModal = modalNum;
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides" + curModal);
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    function toggleMute() {
+
+        var video=document.getElementById("myVideo")
+
+        if(video.muted){
+            video.muted = false;
+        } else {
+            video.muted = true;
+        }
+
+    }
+</script>
+
 </body>
 </html>
