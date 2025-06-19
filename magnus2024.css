@@ -5,7 +5,6 @@ body {
     line-height: 1.5;
     margin: 0;
     color: rgb(62,62,63);
-    cursor: crosshair;
 }
 
 .wrapper {
@@ -43,10 +42,6 @@ html.lenis, html.lenis body {
 
 p {
     padding-bottom: 0.6rem;
-}
-
-p a:hover {
-    cursor: crosshair;
 }
 
 a {
@@ -225,7 +220,6 @@ img {
 button {
     background-color: white;
     color: rgb(62,62,63);
-    cursor: crosshair;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -444,12 +438,13 @@ tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.co
 .close:focus {
     opacity: 0.3;
     text-decoration: none;
-    cursor: crosshair;
 }
 
+/*
 .cursor {
     cursor: crosshair;
 }
+*/
 
 /* Next & Previous Buttons */
 .prev {
