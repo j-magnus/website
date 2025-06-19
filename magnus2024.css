@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     margin: 0;
     color: rgb(62,62,63);
+    cursor: crosshair;
 }
 
 .wrapper {
