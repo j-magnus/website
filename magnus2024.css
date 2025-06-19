@@ -50,6 +50,10 @@ a {
     color: rgb(62,62,63);
 }
 
+a:hover {
+    cursor: crosshair;
+}
+
 hr {
     margin-bottom: -1px;
     margin-block-start: 0;
