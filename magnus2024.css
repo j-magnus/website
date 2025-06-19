@@ -221,7 +221,7 @@ img {
 button {
     background-color: white;
     color: rgb(62,62,63);
-    cursor: pointer;
+    cursor: crosshair;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -440,11 +440,11 @@ tr.collapse.in {display:table-row}tbody .collapse.in{display:table-row-group}.co
 .close:focus {
     opacity: 0.3;
     text-decoration: none;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 .cursor {
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 /* Next & Previous Buttons */
