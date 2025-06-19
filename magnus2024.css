@@ -45,13 +45,13 @@ p {
     padding-bottom: 0.6rem;
 }
 
+p a:hover {
+    cursor: crosshair;
+}
+
 a {
     text-decoration: none;
     color: rgb(62,62,63);
-}
-
-a:hover {
-    cursor: crosshair;
 }
 
 hr {
