@@ -16,7 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* SCROLLING */
+/* SCROLLING
 
 html.lenis, html.lenis body {
   height: auto;
@@ -37,6 +37,7 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+ */
 
 </* TEXT STYLING*/>
 
