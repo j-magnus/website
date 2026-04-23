@@ -686,6 +686,10 @@ img.hover-shadow {
         padding: 0;
     }
 
+    .videobox {
+        padding: 8px;
+    }
+
     .section {
         padding: 0;
     }
